@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Header from "./components/Header";
+import Banner from "./components/Banner";
 
 function App() {
   const [getBack, setGetBack] = useState("");
@@ -17,12 +18,8 @@ function App() {
 
   return (
     <div className="container mx-auto">
-      {/* Header and Navbar */}
       <Header />
-      <div>
-        <h1>Does this still work?</h1>
-        <p>{getBack}</p>
-      </div>
+      <Banner />
     </div>
   );
 }
