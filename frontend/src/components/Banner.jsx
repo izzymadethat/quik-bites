@@ -1,6 +1,6 @@
 const Banner = () => {
   return (
-    <div className="relative mt-8 shadow-lg h-96 rounded-3xl">
+    <section className="relative mt-8 shadow-lg h-96 rounded-3xl">
       <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1450152021501-598b36b17449?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center bg-no-repeat rounded-3xl"></div>
       <div className="absolute inset-0 opacity-80 md:opacity-40 bg-gradient-to-tr from-red-600 to-purple-900/50 rounded-3xl blur-sm"></div>
 
@@ -24,7 +24,7 @@ const Banner = () => {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 export default Banner;
