@@ -1,0 +1,23 @@
+services:
+  server:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    environment:
+      FLASK_ENV: development
+      FLASK_DEBUG: 1
+    volumes:
+      - ./backend:/app
+    networks:
+      - quikbites
+  client:
+    build: ./frontend
+    ports:
+      - "3000:5173"
+    volumes:
+      - ./frontend:/app
+    networks:
+      - quikbites
+networks:
+  quikbites:
+    driver: bridge
