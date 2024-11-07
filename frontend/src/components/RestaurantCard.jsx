@@ -7,9 +7,13 @@ const RestaurantCard = ({
   fastestTime
 }) => {
   return (
-    <article className="space-y-1 cursor-pointer">
-      <div className="rounded-3xl">
-        <img src={imgUrl} alt="" className="rounded-xl" />
+    <article className="space-y-1 cursor-pointer max-h-32">
+      <div className="w-full h-full rounded-3xl">
+        <img
+          src={imgUrl}
+          alt=""
+          className="object-cover w-full h-full rounded-xl"
+        />
       </div>
       <div className="flex items-center justify-between">
         <h3 className="font-bold">{title}</h3>
